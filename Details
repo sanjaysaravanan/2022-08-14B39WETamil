@@ -10,47 +10,39 @@ Recap:
     4xx --> Client Side Error
     5xx --> Server Side Error
 
-  BrowserJS (Frontend) vs NodeJs()
+  BrowserJS (Frontend) vs NodeJs(Backend)
     
-    BrowserJS --> JS engine is sandboxed. window, document utils
-    NodeJs --> Separate Engine for execution of JS. ** No window, document utils **
+    BrowserJS(Client-Side) --> JS engine is sandboxed. window, document utils
+    NodeJs(Server-Side) --> Separate Engine for execution of JS. ** No window, document utils **
+  
+  JS:
+    if/else
+    for loop
 
-  JS: 
-    keyword
-    Datatypes -> 
+  arithmetic operators
+  comparison operators
 
 Topics:
 
-  comment single line --> ctrl + /
-  comment multiple line --> Select the lines ctrl + shift + A or ctrl + /
+  Number
 
-  Iteration of Array  (for, for of , forEach)
-  JSON/JS Object iteration (for in), keys, values
-  JSON - Javascript Object Notation
+  String 
 
-  Functions & return keyword
-  types of functions
-  Function calling/invoking
+  Number to string and string to number 
 
   Install Extensions:
     HTMLCSS Support -> ecmel
-    HTML Snippets -> Mohamed Abusaid
+    HTML Snippets -> geyao
     Live Server -> Ritwick Dey
     Vscode Icons -> vscode
     Rainbow Brackets -> 2gua
 
+  Array, Array attributes length, slice
+  Array Iteration (for, for of, for in, for each)
+  Code Kata Pratice
+  
   Next Session:
-    Copy By Value & Copy By Reference
+    Objects
+    Object Iteration (for in, keys, values)
 
-    Scope
-    Hoisting( var, function )
-
-    API --> 
-      XMLHttpRequest
-      HTTP Methods
-
-  
-  
-
-  
-
+    
