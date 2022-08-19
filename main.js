@@ -1,270 +1,200 @@
-// // Keyword in JS
-// // reserved which cannot used as var name 
-
-// var num; // variable declaration( we say this is a var )
-
-// num = 100; // initialization ( Giving some value at first )
+// Data Types
+// String, Number, boolean
 
 
-// // Set of statement put together
-// function sum() { // function declaration
-//   console.log("");
-// }
+var name = "Sanjay"; // String value type string
+var age = 30; // Number value type number(NaN)
+var isGraduated = true; // true/fals value type boolean
 
-
-// // Datatypes Number, sting, boolean, undefined, null
+// if graduated print sanjay is graduated
 
 
 
-// var num1 = 80;
+// if num is odd print odd else even
+var num = 100;
 
-// console.log(10 / 5); // 2 quotient
-// console.log(11 / 5); // 2
 
-// console.log(11 % 5); // 1 remainder of 11 / 5
+// Arithmatic Operators
+// if ( num % 2)
+// exponentiation
+// console.log(2 ** 5); // 2 x 2 x 2 x 2 x 2 -> ans
+// // console.log(/)
 
-// // Find whether number is a multiple of five 
-// // when a number divided gives zero as remainder then it is a multiple
+// // 5 / 2 --> ans: 2 remainder: 1
+// // 5 / 3 --> ans: 1 remainder: 2
+// // 13 / 5 --> ans: 2 remainder: 3
+// modulus or remainder
+// console.log(5 % 2); // ans: 1
+// console.log(5 % 3); // ans: 2
+// console.log(13 % 5);// ans: 3
 
-// // if (num1 % 5 == 0) {
-// //   console.log("True");
-// // } else {
-// //   console.log("False");
-// // }
+// Increment Operator
+num++; // num = num + 1;
+// Decrement Operator
+num--; // num = num - 1;
 
-// // Arthematice Operators
-// // +, -, *, /, % --> remainder of a division eg: 12 % 6 --> 0 13 % 5 --> 1
+// console.log(num);
 
-// // Logical Operators
-// // &, |, ! ---> negetion( false -> true, true -> false )
+// Comparison Operator or Logical Operator
+// == checks only the value not the type
+var x = 5;
+// console.log(x == 5); // true 
+// console.log(x == '5'); // true no type check
+// console.log(x == 8); // false
 
-// // &&, ||, 
-// // Year is leap Year or not
-// // what is a leap year
-// // Leap
+// != ! ---> not/negetion
 
-// var year = 1990;
+// console.log(x != '5'); // ans false
+// console.log(x !== '5'); // ans true
+// console.log(x !== 5); // ans false
 
-// if (year % 4 == 0) {
-//   console.log('True');
+// console.log(x >= 10); // false 
+// console.log(x >= 4); // true
+// console.log(x <= 3); // false
+
+// console.log(x >= 5); // true
+// console.log(x > 5); // false
+// console.log(!(x < 5)); // false
+
+
+// if num is odd print odd else even
+var num = 100;
+
+// if (num % 2 == 0) {
+//   console.log("####");
+//   console.log('Even');
+//   console.log("####");
 // } else {
-//   console.log('False');
+//   console.log("####");
+//   console.log('Odd');
+//   console.log("####");
 // }
 
-// var age = 12;
-// var cls = 7;
 
-// // Display true if age -> 12 and class -> 8
-
-// if (age == 12 && cls == 8) {
-//   console.log('True');
+// 0 --> false 1 or > 1 ----> true
+// if (num % 2) { // results only with 0 or 1
+//   console.log("####");
+//   console.log('Odd');
+//   console.log("$$$$");
 // } else {
-//   console.log('False');
+//   console.log("####");
+//   console.log('Even');
+//   console.log("$$$$");
 // }
 
-// // string, number, boolean ---> Primitive Datatypes
+// negetion !
+// console.log(!(num % 2 == 0)); // ans true
+// console.log(!(num % 2 == 1)); // ans true
 
-// var name = "Sanjay";
-// var Age = 25;
-// var role = 'Devoper'
-// var isGraduated = true;
+// if (!(num % 2 == 1)) { // results only with 0 or 1
+// console.log("####");
+// console.log('Even');
+// console.log("$$$$");
+// } else {
+//   console.log("####");
+//   console.log('Odd');
+//   console.log("$$$$");
+// }
 
-// Composite Datatypes( Combined Types )
+// Alogrithim:
+// step 1: start
+// step 2: Get remainder num / 2 
+// step 3: check remainder
+// .
+// .
+// .
+// Step last: end
 
-// Array 
-// var arr = [1, 2, "Sanjay", true];
 
-// Get the Length
+// string number to number
+
+var y = '123'; // number 123
+
+// parseInt ---> parseInt(y)
+// console.log(typeof y);
+// console.log(parseInt(y)); // converts a string to number
+
+// number to string
+// console.log(typeof 123)
+// console.log(typeof JSON.stringify(123));
+
+// name = "Sanajy Saravanana";
+
+// console.log(name.length);
+
+
+// Compsite Datatypes ---> Combined 
+// Array/List ---> Group of element which can be of different types
+//         0  1  2  3  4 ( Positive Index )
+//        -5 -4 -3 -2 -1 (Negative Index)
+var arr = [1, 2, 3, 4, 5]; // all the elements are number
+
+var arrDiffTypes = [1, "Some Name", 3, true]; // array elements are of different types
+
+// console.log(arr);
 // console.log(arr.length);
 
-// x = 0; x++ --> x = x + 1; 
+// Slicing
+// console.log(arr.slice(2)); // [3, 4, 5]
 
 
-// Iterating --> for a particular array going one by one
-// for (var i = 0; i < 4; i = i + 1) {
-//   console.log(arr[i]); // print ith element of array
-// }
+// console.log(arr.slice(0, 3)); // [1, 2, 3]
 
-// for (var i = 0; i < arr.length; i = i + 3) {
-//   console.log(arr[1]); //print ith element of array eg: arr[0] -> first element 1. arr[1] second element 2
-// }
+// console.log(arr.slice(1, 3)); // [2, 3]
+
+// // Negative Slicing
+// console.log(arr.slice(-5, -2)); // [3, 4, 5] // -n gives last n elements
+
+// console.log(arrDiffTypes);
+// console.log(arrDiffTypes.length);
 
 
-// i = i + 1, i++, i += 1
+//           0
+// var arr3 = [100]; // length 1
+// //                                             0      1       2 
+// arr3[2] = 3; // index 2 assigning value to 3 [100, undefined, 3]
 
-// i = i - 1, i--, i -= 1
+// console.log('Array', arr3.length);
+// console.log('Contents', arr3);
 
-// i = i * 1, i *= 1
+var arr4 = [];
+// 0 ... 998,999
+arr4[999] = 88;[88]
 
-// i = i / 1, i /= 1
+// console.log('Array', arr4.length); // 1000
+// console.log('Contents', arr4); // [empty/undefined * 999, 88];
 
-// x = 1
-// Follwing statements will increment x by 1
-// x = x + 1
-// x++
-// x += 1
-
-// Iterating for of
-// For of
-
-// No Increment Var needed
-//         0  1     2       3
-// var arr = [1, 2, "Sanjay", true];
-// console.log(arr);
-// for (var value of arr) {
-//   console.log(value);
-// }
-
-// sectioning/slicing an array
-// slice(start, end) will give sliced array of start to end-1 index elements as a new array
-// console.log(arr.slice(1, 3)); // 1 to 2(3-1) [ 2, 'Sanjay']
-
-// Functions are the blocks of code used to execute a set of statements
-// Function definition/declaration
-
-function DisplayInfo() {
-  console.log("#####");
-  console.log('Hello Wold');
-  console.log("Hi Hello");
+// Iteration/Looping ---> going through elements of an array/object one by one
+// for with increment 
+for (var i = 0; i < arr.length; i++) {
+  // console.log(arr[i]);
 }
 
-// Execution/Calling/Invoking of a function
-// DisplayInfo();
-
-var name = "Saravanan";
-
-// Passing Parameters/arguements to a function
-function DisplayParams(name, age, role) {
-  console.log("Name is", name);
-  console.log("Age is", age);
-  console.log("Role is", role);
-}
-
-// Function Call with params
-// DisplayParams('Sanjay', 40, 'developer');
-
-// Return statement
-function addMarks(mark1, mark2, mark3) {
-  return mark1 + mark2 + mark3;
-}
-
-// var totalMarks = addMarks(90, 55, 80);
-
-// console.log(totalMarks);
-
-// Types of functions
-// ES 5
-// Function keyword function
-function Sum(a, b) {
-  return a + b;
-}
-
-// ES 5
-// function expression
-var Sum = function (a, b) {
-  return a + b;
-}
-
-// ES 6
-// Arrow function
-var Sum = (a, b) => {
-  return a + b;
-}
-
-// After discussing about oops we will see the diff between function keyword / normal arrow fucntion
-
-// console.log(Sum(10, 20));
-
-
-// Js Object ( key <-> pair )
-// var personObj = {
-//   firstName: 'Sanjay',
-//   lastName: 'Saravanan',
-//   DOB: 'yyyy-mm-dd',
-//   role: 'developer',
-//   age: 'xx',
-//   location: 'chennai',
-//   nationality: 'india',
-//   skills: ['JS', 'Python', 'C++']
-// }
-
-// personObj['firstName'] or personObj.firstName ==> Sanjay
-
-// First Name: Sanjay
-// Last Name: Saravanan
-// .
-// .
-// .
-
-// for of, for, forEach ---> Array
-
-// for in use in Array / Object
-for (var key in personObj) {
-  // console.log(key, personObj[key]);
-}
-//         0  1     2        3
-var arr = [1, 2, "Sanjay", true];
-
-for (var x in arr) {
-  // console.log(x, arr[x]);
+// Iteration for of
+// No Increment Variable needed
+var arr = [1, 2, 3, 4, 5];
+for (var z of arr) {
+  { { { } } }
+  // console.log(z);
 }
 
 
-// forEach can only used with arr
-// forEach iterates through an taking with a function with three params value, index, array
-arr.forEach(function (x, index, paramaArr) {
-  // console.log("Value", x);
-  // console.log("Index", index);
-  // console.log("Complete Array", paramaArr);
-  // console.log("Something");
-});
 
-// Object 
-var personObj = {
-  firstName: 'Sanjay',
-  lastName: 'Saravanan',
-  DOB: 'yyyy-mm-dd',
-  role: 'developer',
-  age: 'xx',
-  location: 'chennai',
-  nationality: 'india',
-  skills: ['JS', 'Python', 'C++'],
-  projects: [
-    { name: 'RC Toy CAR', langs: ['Python', 'JS'] },
-    { name: 'Hotel Booking Application', lang: ["JS", 'Python'] }
-  ]
+// Iteration for in
+// Iterates the index of the array
+//  0  1  2  3  4
+// [1, 2, 3, 4, 5]
+for (var i in arr) {
+  // console.log(i);
 }
 
-// Object keys
-// console.log(Object.keys(personObj));
-
-// with key we can get value but **with value You cannot get key**
-Object.keys(personObj).forEach((x) => {
-  console.log(x, personObj[x]);
-});
-
-// Object values
-// console.log(Object.values(personObj));
+// console.log(arr[0]);
+// console.log(arr['0']);
+// console.log(arr["hi"] = '');
 
 
-// JSON --> Javascript Object Notation
 
-var arr3 = [1, 2, 3, 4, 5];
 
-// Iterate through value
-for (var num of arr3) {
-  console.log(num);
-}
 
-console.log("##################")
 
-// Iterate throguh index/key
-for (var index in arr3) {
-  console.log(index);
-}
 
-console.log("##################")
-
-for (var key in personObj) {
-  console.log(key);
-}
